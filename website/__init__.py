@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-# from os import path
+import os
 from flask_login import LoginManager
 
 db = SQLAlchemy()
@@ -10,7 +10,8 @@ DB_NAME = "database.db"
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'fsfsfsdf sfsfsfdsf'
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'postgres://flask_web_app_user:Nd2EsLclDIbKrt82SaE262PCYotY1bn7@dpg-cgnfpmiut4m1g7k3f1f0-a/flask_web_app'
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+    # f'postgres://flask_web_app_user:Nd2EsLclDIbKrt82SaE262PCYotY1bn7@dpg-cgnfpmiut4m1g7k3f1f0-a/flask_web_app'
     db.init_app(app)
 
     from .views import views
