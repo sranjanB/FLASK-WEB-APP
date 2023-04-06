@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "builds": [
+      {
+          "src": "*.py",
+          "use": "@sranjanB/FLASK-WEB-APP"
+      }
+  ],
+  "routes": [
+      {
+          "src": "(.*)",
+          "dest": "main.py"
+      }
+  ]
+}
