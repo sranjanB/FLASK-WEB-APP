@@ -33,6 +33,5 @@ trio==0.22.0
 trio-websocket==0.10.2
 typing_extensions==4.5.0
 urllib3==1.26.15
-vboxapi==1.0
 Werkzeug==2.2.3
 wsproto==1.2.0
