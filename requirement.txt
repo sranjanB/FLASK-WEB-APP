@@ -11,6 +11,7 @@ Flask==2.2.3
 Flask-Login==0.6.2
 Flask-SQLAlchemy==3.0.3
 greenlet==2.0.2
+gunicorn==20.1.0
 h11==0.14.0
 idna==3.4
 itsdangerous==2.1.2
@@ -19,6 +20,7 @@ MarkupSafe==2.1.2
 outcome==1.2.0
 parse==1.19.0
 parse-type==0.6.0
+psycopg2-binary==2.9.6
 pycparser==2.21
 PySocks==1.7.1
 requests==2.28.2
@@ -34,4 +36,3 @@ urllib3==1.26.15
 vboxapi==1.0
 Werkzeug==2.2.3
 wsproto==1.2.0
-psycopg2-binary==2.9.6
